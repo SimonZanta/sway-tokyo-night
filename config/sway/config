@@ -84,7 +84,7 @@ input type:keyboard {
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    bindsym $mod+n exec makoctl menu fuzzel --dmenu
+    bindsym $mod+n exec makoctl menu -- fuzzel -d
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
