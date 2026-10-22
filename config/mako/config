@@ -16,6 +16,6 @@ anchor=top-right
 border-color=#f7768e
 default-timeout=0
 
-[actionable]
+[app-name=blueman actionable]
 default-timeout=0
 ignore-timeout=1
