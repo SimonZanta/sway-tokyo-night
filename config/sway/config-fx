@@ -1,0 +1,11 @@
+include ~/.config/sway/config
+
+animation_duration_ms 250
+corner_radius 10
+shadows enable
+shadow_blur_radius 20
+shadow_color #0000007f
+blur enable
+blur_passes 2
+blur_radius 5
+layer_effects "waybar" blur enable; shadows enable; corner_radius 12

@@ -49,6 +49,13 @@ tooltip {
     color: @text;
 }
 
+#workspaces button#sway-workspace-11\:1:not(.focused):not(.urgent) { color: @green; }
+#workspaces button#sway-workspace-12\:2:not(.focused):not(.urgent) { color: @lavender; }
+#workspaces button#sway-workspace-13\:3:not(.focused):not(.urgent) { color: @yellow; }
+#workspaces button#sway-workspace-21\:1:not(.focused):not(.urgent) { color: @blue; }
+#workspaces button#sway-workspace-22\:2:not(.focused):not(.urgent) { color: @teal; }
+#workspaces button#sway-workspace-23\:3:not(.focused):not(.urgent) { color: @peach; }
+
 #workspaces button.focused {
     background: @blue;
     color: @base;
@@ -73,14 +80,12 @@ tooltip {
 }
 
 #clock,
+#custom-spotify,
 #language,
 #custom-vpn,
 #bluetooth,
 #network,
 #pulseaudio,
-#cpu,
-#memory,
-#temperature,
 #tray,
 #custom-power {
     background: @surface;
@@ -92,6 +97,10 @@ tooltip {
 #clock {
     color: @lavender;
     font-weight: bold;
+}
+
+#custom-spotify {
+    color: @green;
 }
 
 #language {
@@ -133,23 +142,6 @@ tooltip {
 
 #pulseaudio.muted {
     color: @overlay;
-}
-
-#cpu {
-    color: @green;
-}
-
-#memory {
-    color: @peach;
-}
-
-#temperature {
-    color: @teal;
-}
-
-#temperature.critical {
-    background: @red;
-    color: @base;
 }
 
 #custom-power {
