@@ -60,12 +60,12 @@ This is the part I'd miss most on any other setup.
 
 Monitors are counted left to right, and `Super+1` takes you to workspace 1 **of the monitor you're on**. So the left screen has its own 1, 2, 3 and the right screen has its own 1, 2, 3. No more workspace 7 ending up on the wrong display.
 
-The first three on each monitor are fixed and get their own icon and colour in the bar:
+The first workspaces on each monitor are fixed and get their own icon and colour in the bar:
 
 | | 1 | 2 | 3 |
 |---|---|---|---|
 | **Left monitor** | terminal (green) | code (purple) | database (yellow) |
-| **Right monitor** | web (blue) | music (teal) | document (orange) |
+| **Right monitor** | web (blue) | music (teal) | |
 
 Need more? `Super+t` opens the next free one (4, 5, ...) on the current monitor, and `Super+Shift+t` sends the focused window to a new one. When a workspace from 4 up closes, the rest renumber themselves so there are never gaps.
 
