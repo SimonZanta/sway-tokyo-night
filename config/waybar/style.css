@@ -86,6 +86,8 @@ tooltip {
 #bluetooth,
 #network,
 #pulseaudio,
+#battery,
+#custom-no-battery,
 #tray,
 #custom-power {
     background: @surface;
@@ -141,6 +143,22 @@ tooltip {
 }
 
 #pulseaudio.muted {
+    color: @overlay;
+}
+
+#battery {
+    color: @green;
+}
+
+#battery.warning {
+    color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+#custom-no-battery {
     color: @overlay;
 }
 

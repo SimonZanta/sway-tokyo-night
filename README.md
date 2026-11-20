@@ -90,6 +90,7 @@ Floating waybar at the top, rounded and slightly see-through, with every module 
 - **Bluetooth**: the icon, or the connected device with its battery %. Hover lists connected devices, left click opens blueman-manager, right click turns Bluetooth on or off.
 - **Network**: IP on ethernet, SSID on wifi, red `offline` when there's nothing. Hover shows interface, IP/CIDR, gateway and live up/down speed. Click opens nm-connection-editor.
 - **Volume**: icon + %, switches to a headphone icon on headphones. Scroll for 5% steps, click to mute.
+- **Battery**: on a laptop, icon + %, with a charging icon when plugged in, yellow below 30% and red below 15%; hover shows the time left. On a desktop it's a dimmed plug icon instead.
 - **Tray**: blueman applet and friends.
 - **Power**: same menu as `Super+Shift+e`.
 
