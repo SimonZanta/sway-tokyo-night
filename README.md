@@ -9,8 +9,8 @@ Tokyo Night theme for sway on Ubuntu: waybar, mako, fuzzel, foot, gtklock.
 ## Install
 
 ```sh
-git clone https://github.com/SimonZanta/sway-tokio-night.git
-cd sway-tokio-night
+git clone https://github.com/SimonZanta/sway-tokyo-night.git
+cd sway-tokyo-night
 ./install.sh
 ```
 
