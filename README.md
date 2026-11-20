@@ -1,6 +1,6 @@
 # sway-tokyo-night
 
-![Tokyo Night sway desktop with a floating waybar and a mako notification](screenshots/desktop.png)
+![Tokyo Night sway desktop with a floating waybar](screenshots/desktop.png)
 
 **Tokyo Night on sway for Ubuntu. Floating pill bar, every app themed, and each monitor gets its own workspace 1, 2, 3.**
 
@@ -91,7 +91,7 @@ Floating waybar at the top, rounded and slightly see-through, with every module 
 - **Network**: IP on ethernet, SSID on wifi, red `offline` when there's nothing. Hover shows interface, IP/CIDR, gateway and live up/down speed. Click opens nm-connection-editor.
 - **Volume**: icon + %, switches to a headphone icon on headphones. Scroll for 5% steps, click to mute.
 - **Battery**: on a laptop, icon + %, with a charging icon when plugged in, yellow below 30% and red below 15%; hover shows the time left. On a desktop it's a dimmed plug icon instead.
-- **Tray**: blueman applet and friends.
+- **Tray**: for apps that add an icon. The blueman icon is turned off, since the Bluetooth pill already covers it.
 - **Power**: same menu as `Super+Shift+e`.
 
 ## Shortcuts

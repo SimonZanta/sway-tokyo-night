@@ -10,6 +10,7 @@ cp -r config/. ~/.config/
 sed -i "s|__HOME__|$HOME|" ~/.config/gtklock/config.ini
 cp fonts/*.ttf ~/.local/share/fonts/NerdFontsSymbols/
 fc-cache -f
+gsettings set org.blueman.general plugin-list "['!StatusNotifierItem']"
 
 if [ -n "$SWAYSOCK" ]; then
     swaymsg reload
