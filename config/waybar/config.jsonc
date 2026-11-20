@@ -54,10 +54,10 @@
         "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
     "custom/vpn": {
-        "exec": "n=$(nmcli -t -f NAME,TYPE con show --active | grep ':vpn$' | cut -d: -f1); if [ -n \"$n\" ]; then printf '󰖂  %s\\n%s connected (right-click to disconnect)\\non\\n' \"$n\" \"$n\"; else printf '󰖂\\nVPN off (right-click to connect comgate)\\noff\\n'; fi",
+        "exec": "n=$(nmcli -t -f NAME,TYPE con show --active | grep ':vpn$' | cut -d: -f1); if [ -n \"$n\" ]; then printf '󰖂  %s\\n%s connected (right-click to disconnect)\\non\\n' \"$n\" \"$n\"; else printf '󰖂\\nVPN off (right-click to connect)\\noff\\n'; fi",
         "interval": 5,
         "on-click": "nm-connection-editor",
-        "on-click-right": "nmcli -t -f NAME con show --active | grep -qx comgate && nmcli con down comgate || foot -a vpn-prompt -W 60x8 sh -c 'nmcli --ask con up comgate || sleep 5'"
+        "on-click-right": "n=$(nmcli -t -f NAME,TYPE con show --active | grep ':vpn$' | cut -d: -f1); if [ -n \"$n\" ]; then nmcli con down \"$n\"; else v=$(nmcli -t -f NAME,TYPE con show | grep ':vpn$' | head -1 | cut -d: -f1); foot -a vpn-prompt -W 60x8 sh -c \"nmcli --ask con up '$v' || sleep 5\"; fi"
     },
     "bluetooth": {
         "format": "󰂯",
